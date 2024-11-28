@@ -1,6 +1,3 @@
-﻿import os
-import datetime
-
 # Lista de diretórios
 directories = @(
     "C:\Teste\"
