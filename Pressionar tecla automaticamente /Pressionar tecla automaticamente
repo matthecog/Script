@@ -1,0 +1,5 @@
+While ($true) {
+[System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
+Start-Sleep -Seconds 2
+
+}
