@@ -2,9 +2,8 @@
 
 -  <a href="https://github.com/matthecog/Script/blob/main/Apagar%20arquivos%20por%20exten%C3%A7%C3%A3o%20e%20data/Apagar%20arquivos%20COM%20confirma%C3%A7%C3%A3o%201%20%C3%A0%201.ps1">Apagar arquivos COM confirmação 1 à 1</a>
 -  <a href="https://github.com/matthecog/Script/blob/main/Apagar%20arquivos%20por%20exten%C3%A7%C3%A3o%20e%20data/Apagar%20arquivos%20SEM%20confirma%C3%A7%C3%A3o.ps1">Apagar arquivos SEM confirmação</a>
--  <a href="https://github.com/matthecog/Script/blob/main/Apagar%20arquivos%20por%20exten%C3%A7%C3%A3o%20e%20data/Apagar%20arquivos%20COM%20confirma%C3%A7%C3%A3o%20em%20lotes%20de%2020.ps1">Apagar arquivos com mais de 7 dias solicitando confirmação em lotes de 20.ps1</a>
--  Apaga os arquivos com mais de 7 dias
+-  <a href="https://github.com/matthecog/Script/blob/main/Apagar%20arquivos%20por%20exten%C3%A7%C3%A3o%20e%20data/Apagar%20arquivos%20COM%20confirma%C3%A7%C3%A3o%20em%20lo
+
+
 ##
 <div align="center">Feito por <a href="https://github.com/matthecog">Matheus Guimarães</a>.</div>
-
-https://github.com/matthecog/Script/blob/main/Apagar%20arquivos%20por%20exten%C3%A7%C3%A3o%20e%20data/Apagar%20arquivos%20COM%20confirma%C3%A7%C3%A3o%201%20%C3%A0%201.ps1
