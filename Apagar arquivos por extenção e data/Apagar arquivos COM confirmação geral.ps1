@@ -1,18 +1,20 @@
-﻿# Lista de diretórios
-$directories = @(
-    "C:\Teste\"
+#Lista de diretórios
+    $directories = @(
+    # Separar diretórios por vírgola
     # Adicione mais diretórios conforme necessário
-)
-
-# Extensão do arquivo e data limite
-$fileExtension = ".log"
-$dateLimit = Get-Date "10/01/2024"
+    "C:\Teste\"
+    )
+#Extensão do arquivo e data limite
+    $fileExtension = ".log"
+    # Data tem duas opções, a segunda está comentada.
+    $dateLimit = (Get-Date).AddDays(-7)
+   #$dateLimit = Get-Date "10/15/2024"
 
 # Encontrar todos os arquivos que correspondem aos critérios
 $filesToDelete = @()
 foreach ($directory in $directories) {
-    $filesToDelete += Get-ChildItem -Path $directory -Recurse -Filter "*$fileExtension" | Where-Object {
-        $_.LastWriteTime -lt $dateLimit
+    $filesToDelete += Get-ChildItem -Path $directory -Recurse -Filter "*$file_extension" | Where-Object {
+        $_.LastWriteTime -lt $date_limit
     }
 }
 
