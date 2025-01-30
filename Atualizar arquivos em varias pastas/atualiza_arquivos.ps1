@@ -41,7 +41,7 @@ Write-Output "Arquivo $ArquivoDelete Apagado com Sucesso"
 $ArquivoOriginal = "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\tnsnames.ora"
 $NovoNome = "padrao.ora"
 
-# Obtém o diretorio do arquivo original
+# ObtÃ©m o diretorio do arquivo original
 $Diretorio = [System.IO.Path]::GetDirectoryName($ArquivoOriginal)
 
 # Define o caminho completo do novo arquivo
