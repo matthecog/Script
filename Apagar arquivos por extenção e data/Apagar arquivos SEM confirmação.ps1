@@ -1,12 +1,14 @@
-﻿# Lista de diretórios
-$directories = @(
-    "C:\Teste\"
+#Lista de diretórios
+    $directories = @(
+    # Separar diretórios por vírgola
     # Adicione mais diretórios conforme necessário
-)
-
-# Extensão do arquivo e data limite
-$fileExtension = ".log"
-$dateLimit = (Get-Date).AddDays(-7)
+    "C:\Teste\"
+    )
+#Extensão do arquivo e data limite
+    $fileExtension = ".log"
+    # Data tem duas opções, a segunda está comentada.
+    $dateLimit = (Get-Date).AddDays(-7)
+   #$dateLimit = Get-Date "10/15/2024"
 
 foreach ($directory in $directories) {
     Get-ChildItem -Path $directory -Recurse -Filter "*$fileExtension" | Where-Object {
