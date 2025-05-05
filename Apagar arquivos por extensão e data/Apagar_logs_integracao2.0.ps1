@@ -6,7 +6,7 @@ $extensoesPadrao = @("*.log")
 $caminhosBase = "C:\integracao_padrao_mxm\homologacao"
 $nomePastaAlvo = "sistema_padrao"
 $extensoesNasPastas = @("*.txt", "*.xls", "*.xlsx")
-$excecaoSubpasta = "a_processar"
+$excecaoSubpasta = @ ("a_processar", "Schemas")
 
 # === LOG ===
 $logDir = "C:\Logs"
