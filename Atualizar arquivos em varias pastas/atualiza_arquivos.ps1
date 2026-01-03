@@ -1,14 +1,14 @@
 # Caminho do arquivo que voce deseja copiar
-$SourceFile = "C:\Users\matheus.adm\Documents\tnsnames.ora"
+$SourceFile = "C:\Users\matheus\Documents\arquivo.ora"
 
 # Lista de pastas de destino
 $DestinationFolders = @(
-    "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\DPC1",
-	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\DPCWEB2",
-	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\DPCWEB3",
-	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\DPCWEB4HOM",
-	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\PDB1_RJ",
-	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas",
+    "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\pasta",
+	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\pasta",
+	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\pasta",
+	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\pasta",
+	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\pasta",
+	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas",
 	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\oracle\product\10.2.0\client_1\network\admin",
 	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\oracle\product\11.2.0\client_1\network\admin",
 	"\\localhost\NETLOGON\ATUALIZA_TNSNAMES\oracle\product\19.0.0\client_1\network\admin",
@@ -28,7 +28,7 @@ Write-Output "Arquivos copiados com sucesso."
 #-------------------------------------------------------------------------------------------------------------------
 
 # Define o caminho do arquivo a ser apagado
-$ArquivoDelete = "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\padrao.ora"
+$ArquivoDelete = "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\padrao.ora"
 
 # Apaga o arquivo
 Remove-Item -Path $ArquivoDelete -Force
@@ -38,7 +38,7 @@ Write-Output "Arquivo $ArquivoDelete Apagado com Sucesso"
 #-------------------------------------------------------------------------------------------------------------------
 
 # Define o caminho do arquivo original e o novo nome
-$ArquivoOriginal = "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\DPCSistemas\tnsnames.ora"
+$ArquivoOriginal = "\\localhost\NETLOGON\ATUALIZA_TNSNAMES\Sistemas\tnsnames.ora"
 $NovoNome = "padrao.ora"
 
 # Obtém o diretorio do arquivo original
@@ -51,3 +51,4 @@ $NovoCaminho = [System.IO.Path]::Combine($Diretorio, $NovoNome)
 Rename-Item -Path $ArquivoOriginal -NewName $NovoNome
 
 Write-Output "Arquivo renomeado para $NovoCaminho"
+
