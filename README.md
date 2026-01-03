@@ -1,4 +1,4 @@
-# Scripts para otimizar o trabalho de Infraestrutura de TI.
+# Portifólio de scripts para Infraestrutura de TI.
 Repositorio de Scripts criados para agilizar o trabalho na área de Infraestrutura de TI.
 
 ##
